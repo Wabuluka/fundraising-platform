@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto+Slab:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playwrite+NZ+Guides&family=Roboto+Slab:wght@900&display=swap");
+@import "tailwindcss";
+@plugin "daisyui";
+
+@layer base {
+  body {
+    @apply bg-base-100 text-base-content;
+  }
+  h1 {
+    font-family: "Roboto Slab", serif;
+  }
+  /* p {
+    font-family: "Playwrite NZ Guides", cursive;
+  } */
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary hover:bg-primary/90 text-white;
+  }
+
+  .card-custom {
+    @apply bg-base-100 shadow-xl rounded-lg p-6;
+  }
+
+  .input-custom {
+    @apply input w-full;
+  }
+}
